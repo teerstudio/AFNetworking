@@ -22,6 +22,7 @@
 
 #import "AppDelegate.h"
 
+
 #if __IPHONE_OS_VERSION_MIN_REQUIRED
     #import "GlobalTimelineViewController.h"
 
@@ -45,6 +46,8 @@
         self.window.backgroundColor = [UIColor whiteColor];
         self.window.rootViewController = self.navigationController;
         [self.window makeKeyAndVisible];
+        
+        NSLog(@"%d",__IPHONE_OS_VERSION_MIN_REQUIRED);
         
         return YES;
     }
